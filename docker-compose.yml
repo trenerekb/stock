@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  stock_app:
+    build: .
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db_stock
+    environment:
+      - SQLALCHEMY_DATABASE_URI=${DATABASE_URI}
+      - SECRET_KEY=${SECRET_KEY}
+#    entrypoint: /entrypoint.sh
+
+  db_stock:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    restart: always
+    ports:
+      - "5434:5432"
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+#  migration:
+#    build: .
+#    command: flask db init
+#    command: flask db upgrade
+
+volumes:
+  postgres_data:
