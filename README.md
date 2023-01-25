@@ -20,4 +20,4 @@ Migrations are made with changes in tables**
 - */categoryArticle/*
 ##
 **Database Schema**
-![image](![Схема базы данных STOCK](https://user-images.githubusercontent.com/101623951/214504826-8e326085-7b32-4409-b6c1-d2cb8e2515ef.png))
+![Схема базы данных STOCK](https://user-images.githubusercontent.com/101623951/214504826-8e326085-7b32-4409-b6c1-d2cb8e2515ef.png)
