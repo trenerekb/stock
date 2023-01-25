@@ -18,3 +18,6 @@ Migrations are made with changes in tables**
 - */categories/*
 - */articleSpec/*
 - */categoryArticle/*
+##
+**Database Schema**
+![image](https://user-images.githubusercontent.com/101623951/214503917-6829b670-6515-4534-8a9c-c99a0a7fed58.png)
